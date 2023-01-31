@@ -110,7 +110,7 @@ const Form: React.FC = () => {
                 <p>{formik.errors.email}</p>
 
                 <label htmlFor="phoneNumber">Telefone:</label>
-                <input onChange={formik.handleChange} defaultValue={formik.values.phoneNumber} id="phoneNumber" type="phone" />
+                <input onChange={formik.handleChange} defaultValue={formik.values.phoneNumber} id="phoneNumber" type="text" />
                 <p>{formik.errors.phoneNumber}</p>
             </div>
             <div className="forms">
@@ -127,12 +127,12 @@ const Form: React.FC = () => {
                 <p>{formik.errors.publishYear}</p>
             </div>
             <div className="forms">
-                <label htmlFor="date">Data do Empréstimo:</label>
-                <input onChange={formik.handleChange} defaultValue={formik.values.date} id="date" type="text" />
+                <label htmlFor="date">Data do Empréstimo :</label>
+                <input onChange={formik.handleChange} defaultValue={formik.values.date} id="date" type="date" />
                 <p>{formik.errors.date}</p>
 
                 <label htmlFor="time">Hora do Empréstimo:</label>
-                <input onChange={formik.handleChange} defaultValue={formik.values.time} id="time" type="text" />
+                <input onChange={formik.handleChange} defaultValue={formik.values.time} id="time" type="time" />
                 <p>{formik.errors.time}</p>
             </div>
 
